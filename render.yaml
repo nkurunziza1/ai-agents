@@ -1,0 +1,50 @@
+# render.yaml
+
+services:
+  - type: web
+    name: icupa-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run dev
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        sync: false
+      - key: OPENAI_BASE_URL
+        sync: false
+      - key: OPENAI_ASSISTANT_ID
+        sync: false
+      - key: TWILIO_SID
+        sync: false
+      - key: TWILIO_AUTH
+        sync: false
+      - key: TWILIO_FROM_NUMBER
+        sync: false
+      - key: TWILIO_CALLBACK_URL
+        sync: false
+      - key: WHATSAPP_API_URL
+        sync: false
+      - key: WHATSAPP_API_TOKEN
+        sync: false
+      - key: WHATSAPP_WEBHOOK_VERIFY_TOKEN
+        sync: false
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_CLIENT_EMAIL
+        sync: false
+      - key: FIREBASE_PRIVATE_KEY
+        sync: false
+      - key: FIREBASE_DATABASE_URL
+        sync: false
+      - key: DEFAULT_AGENT_ID
+        sync: false
+      - key: LOG_LEVEL
+        sync: false
+      - key: ENVIRONMENT
+        sync: false
+      - key: PORT
+        sync: false
+      - key: BASE_URL
+        sync: false
