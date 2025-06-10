@@ -1,0 +1,27 @@
+{
+  "contacts": {
+    "phone_number_id": {
+      "agent_id": "icupa_malta",
+      "status": "new | contacted | replied | converted",
+      "language": "english",
+      "last_interaction": "timestamp",
+      "messages": [
+        {
+          "from": "agent | user",
+          "text": "Hey there 👋",
+          "timestamp": "2025-06-06T12:00:00Z"
+        }
+      ],
+      "escalation": false,
+      "conversion_date": null
+    }
+  },
+  "events": {
+    "event_id": {
+      "type": "voice_call | whatsapp_message",
+      "status": "success | failed",
+      "duration": 25,
+      "timestamp": "2025-06-06T13:45:00Z"
+    }
+  }
+}

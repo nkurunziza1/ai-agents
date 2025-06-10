@@ -1,0 +1,3 @@
+{
+  "icupa_malta": ["sendMessage", "initiateVoiceCall", "escalateLead", "trackConversion"]
+}

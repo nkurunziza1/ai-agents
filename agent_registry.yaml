@@ -1,0 +1,54 @@
+agent_registry:
+  ICUPA_Malta_SalesAgent:
+    agent_id: icupa_malta
+    language: english
+    product: ICUPA
+    region: malta
+    persona_file: ./personas/icupa_malta.yaml
+    prompt_template: ./promptTemplates/icupa_malta.yaml
+    channel_support:
+      - whatsapp
+      - voice
+    voice_script_format: say
+    fallback_language: english
+    escalation_enabled: true
+    contact_selector:
+      country_code: MT
+      product_match: ICUPA
+      language: english
+
+  ICUPA_Rwanda_SalesAgent:
+    agent_id: ICUPA_Rwanda_SalesAgent
+    language: kinyarwanda
+    product: ICUPA
+    region: rwanda
+    persona_file: ./personas/icupa_rwanda.yaml
+    prompt_template: ./promptTemplates/icupa_rwanda.yaml
+    channel_support:
+      - whatsapp
+      - voice
+    voice_script_format: say
+    fallback_language: english
+    escalation_enabled: true
+    contact_selector:
+      country_code: RW
+      product_match: ICUPA
+      language: kinyarwanda
+
+  Lifuti_Rwanda_SalesAgent:
+    agent_id: lifuti_rwanda
+    language: kinyarwanda
+    product: Lifuti
+    region: rwanda
+    persona_file: ./personas/lifuti_rwanda.yaml
+    prompt_template: ./promptTemplates/lifuti_rwanda.yaml
+    channel_support:
+      - whatsapp
+      - voice
+    voice_script_format: say
+    fallback_language: english
+    escalation_enabled: true
+    contact_selector:
+      country_code: RW
+      product_match: Lifuti
+      language: kinyarwanda
